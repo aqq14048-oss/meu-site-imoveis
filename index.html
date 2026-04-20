@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silva Imóveis | Consultoria Ingrid Silva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">SILVA <span class="gold">IMÓVEIS</span></div>
+            <button class="btn-gold-nav open-modal">
+                <i class="fab fa-whatsapp"></i> Simular no Zap
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow">Consultoria Especializada no Rio</span>
+                <h1>Seu novo endereço com aprovação garantida</h1>
+                <p>Especialista em viabilizar seu financiamento com as melhores taxas do mercado. Tudo feito com transparência e agilidade.</p>
+                <button class="btn-gold-lg open-modal">
+                    <i class="fab fa-whatsapp"></i> Consultar Crédito Agora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="mcmv-highlight container">
+        <div class="glass-card">
+            <div class="card-info">
+                <h2>O que é o Minha Casa Minha Vida?</h2>
+                <p>O programa oferece facilidades exclusivas para famílias com renda mensal de até R$ 8.000,00.</p>
+                <div class="features-grid">
+                    <div class="feature"><i class="fas fa-check-circle gold"></i> <span>Subsídio de até <strong>R$ 55.000</strong> direto no valor do imóvel.</span></div>
+                    <div class="feature"><i class="fas fa-check-circle gold"></i> <span>Menores taxas de juros do mercado imobiliário.</span></div>
+                    <div class="feature"><i class="fas fa-check-circle gold"></i> <span>Possibilidade de usar seu FGTS na entrada.</span></div>
+                </div>
+            </div>
+            <div class="card-icon"><i class="fas fa-house-chimney"></i></div>
+        </div>
+    </section>
+
+    <section class="properties container">
+        <div class="section-title">
+            <h2>Oportunidades Selecionadas</h2>
+        </div>
+
+        <div class="property-grid">
+            <div class="prop-card">
+                <div class="prop-img" style="background-image: url('images/imovel1.jpeg')">
+                    <div class="prop-overlay">Porto</div>
+                </div>
+                <div class="prop-details">
+                    <h3>Residencial Pixinguinha</h3>
+                    <p>Revitalização urbana com alto potencial de valorização.</p>
+                    <button class="btn-saber-mais open-modal" data-imovel="Porto Maravilha">Saber Mais</button>
+                </div>
+            </div>
+
+            <div class="prop-card">
+                <div class="prop-img" style="background-image: url('images/imovel2.jpeg')">
+                    <div class="prop-overlay">Irajá</div>
+                </div>
+                <div class="prop-details">
+                    <h3>Nova Norte Irajá</h3>
+                    <p>Mobilidade e conforto no coração da Zona Norte.</p>
+                    <button class="btn-saber-mais open-modal" data-imovel="Vivendas de Irajá">Saber Mais</button>
+                </div>
+            </div>
+
+            <div class="prop-card">
+                <div class="prop-img" style="background-image: url('images/imovel3.jpeg')">
+                    <div class="prop-overlay">Barra</div>
+                </div>
+                <div class="prop-details">
+                    <h3>Metropolitan</h3>
+                    <p>Exclusividade e lazer completo em endereço nobre.</p>
+                    <button class="btn-saber-mais open-modal" data-imovel="Reserva da Barra">Saber Mais</button>
+                </div>
+            </div>
+
+            <div class="prop-card">
+                <div class="prop-img" style="background-image: url('images/imovel4.jpeg')">
+                    <div class="prop-overlay">Piedade</div>
+                </div>
+                <div class="prop-details">
+                    <h3>Piedade Aquarela</h3>
+                    <p>Tranquilidade e infraestrutura para toda a família.</p>
+                    <button class="btn-saber-mais open-modal" data-imovel="Piedade Family">Saber Mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="biography container">
+        <div class="bio-grid">
+            <div class="bio-image">
+                <div class="image-mask">
+                    <img src="images/corretora.jpeg" alt="Ingrid Silva">
+                </div>
+            </div>
+            <div class="bio-content">
+                <span class="label">Consultora Imobiliária</span>
+                <h2>Ingrid <span class="gold">Silva</span></h2>
+                <p>Foco em proporcionar uma experiência de compra sem estresse e com a melhor aprovação bancária possível.</p>
+            
+                <button class="btn-gold-lg open-modal">
+                    <i class="fab fa-whatsapp"></i> Falar com a Ingrid
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="dark-footer">
+        <div class="container">
+            <div class="footer-logo">SILVA <span class="gold">IMÓVEIS</span></div>
+            <p>Especialista em realizar o sonho da casa própria no Rio de Janeiro.</p>
+            <div class="footer-bottom">© 2026 Silva Imóveis. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <div id="modalSimulacao" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Simulação de Crédito</h3>
+            <p>Preencha os dados básicos para agilizar seu atendimento.</p>
+            <form id="formSimulacao">
+                <input type="text" id="nome" placeholder="Seu Nome Completo" required>
+                <input type="text" id="renda" placeholder="Renda Familiar Bruta (Ex: 3.500)" required>
+                <button type="submit" class="btn-gold-lg" style="width: 100%; justify-content: center; margin-top: 10px;">
+                    Iniciar Simulação no WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <a href="https://wa.me/5521997080209" class="whatsapp-fixed">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
